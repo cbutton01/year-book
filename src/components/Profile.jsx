@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Profile(){
   const profile = {
@@ -8,30 +8,30 @@ function Profile(){
     border: '2px solid #ccc',
     overflow: 'hidden',
     marginBottom: '10px'
-  }
+  };
 
   const background = {
     backgroundColor: '#2d96de',
     height: '150px',
     width: '100%',
     borderBottom: '3px solid #ccc'
-  }
+  };
 
   const profileGroup = {
     position: 'absolute',
     top: '100px',
     left: '30px'
-  }
+  };
 
   const profileSubGroup = {
     display: 'flex',
     alignItems: 'flex-end'
-  }
+  };
 
   const h1 = {
     margin: '0 20px',
     fontSize: '24px'
-  }
+  };
 
   const profileImg = {
     height: '80px',
@@ -39,14 +39,14 @@ function Profile(){
     borderRadius: '10px',
     backgroundColor: '#2d96de',
     border: '3px solid #fff'
-  }
+  };
 
   const links = {
     display: 'flex',
     justifyContent: 'space-around',
     listStyle: 'none',
     padding: '0'
-  }
+  };
 
   return (
     <div style={profile}>
@@ -63,7 +63,7 @@ function Profile(){
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
-export default Profile
+export default Profile;

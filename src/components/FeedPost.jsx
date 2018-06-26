@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function FeedPost(props){
   const friend = {
@@ -7,7 +7,7 @@ function FeedPost(props){
     alignItems: 'flex-start',
     padding: '25px',
     borderBottom: '1px solid #ccc'
-  }
+  };
 
   const friendImg = {
     height: '50px',
@@ -16,17 +16,17 @@ function FeedPost(props){
     borderRadius: '100%',
     backgroundColor: '#ccc',
     marginRight: '20px'
-  }
+  };
 
   const h3 = {
     margin: '0 0',
     color: '#333',
     fontSize: '16px'
-  }
+  };
 
   const p = {
     margin: '5px 0 5px'
-  }
+  };
 
   return (
     <div style={friend}>
@@ -36,12 +36,12 @@ function FeedPost(props){
         <p style={p}>{props.msg}</p>
       </div>
     </div>
-  )
+  );
 }
 
 FeedPost.propTypes = {
   title: PropTypes.string,
   msg: PropTypes.string
-}
+};
 
-export default FeedPost
+export default FeedPost;

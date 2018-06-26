@@ -1,5 +1,5 @@
-import React from 'react'
-import Friend from './Friend'
+import React from 'react';
+import Friend from './Friend';
 
 let masterFriendsList = [
   {
@@ -18,22 +18,22 @@ function FriendsList(){
     border: '2px solid #ccc',
     padding: '10px 25px',
     fontFamily: 'sans-serif'
-  }
+  };
 
   const h2 = {
     fontSize: '18px',
     color: '#333'
-  }
+  };
 
   return (
     <div style={friendsList}>
       <h2 style={h2}>Friends List</h2>
       {masterFriendsList.map((friend, index) =>
-      <Friend name={friend.name}
-        key={index} />
+        <Friend name={friend.name}
+          key={index} />
       )}
     </div>
-  )
+  );
 }
 
-export default FriendsList
+export default FriendsList;

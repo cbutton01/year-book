@@ -1,9 +1,9 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Profile from './Profile'
-import Bio from './Bio'
-import SocialFeed from './SocialFeed'
-import FriendsList from './FriendsList'
+import React from 'react';
+import Navbar from './Navbar';
+import Profile from './Profile';
+import Bio from './Bio';
+import SocialFeed from './SocialFeed';
+import FriendsList from './FriendsList';
 
 function App(){
   const main = {
@@ -11,7 +11,7 @@ function App(){
     gridTemplateColumns: '1fr 1fr 1fr',
     gridGap: '10px',
     padding: '10px',
-  }
+  };
 
 
 
@@ -27,7 +27,7 @@ function App(){
         <FriendsList/>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

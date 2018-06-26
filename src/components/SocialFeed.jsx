@@ -1,12 +1,12 @@
-import React from "react";
-import FeedSearch from "./FeedSearch";
-import FeedPost from "./FeedPost";
+import React from 'react'
+import FeedSearch from './FeedSearch'
+import FeedPost from './FeedPost'
 
 function SocialFeed(){
   const socialFeed = {
-    fontFamily: "sans-serif",
-    border: "2px solid #ccc"
-  };
+    fontFamily: 'sans-serif',
+    border: '2px solid #ccc'
+  }
 
   return (
     <div style={socialFeed}>
@@ -27,7 +27,7 @@ function SocialFeed(){
         title="Cover Letters are due!"
         msg="Don't forget!"/>
     </div>
-  );
+  )
 }
 
-export default SocialFeed;
+export default SocialFeed

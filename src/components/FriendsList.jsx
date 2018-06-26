@@ -10,6 +10,9 @@ let masterFriendsList = [
   },
   {
     name: 'Mark'
+  },
+  {
+    name: 'Mitch'
   }
 ];
 

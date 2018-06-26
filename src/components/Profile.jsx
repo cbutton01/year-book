@@ -34,11 +34,14 @@ function Profile(){
   };
 
   const profileImg = {
-    height: '80px',
-    width: '80px',
-    borderRadius: '10px',
-    backgroundColor: '#2d96de',
-    border: '3px solid #fff'
+    // backgroundImage: 'url(https://i.ytimg.com/vi/VNcBuiM00TE/maxresdefault.jpg)',
+    // backgroundSize: '180%',
+    // backgroundRepeat: 'no-repeat',
+    // backgroundPosition: 'center',
+    // height: '80px',
+    // width: '80px',
+    // borderRadius: '10px',
+    // border: '3px solid #fff'
   };
 
   const links = {
@@ -50,6 +53,33 @@ function Profile(){
 
   return (
     <div style={profile}>
+      <style jsx>{`
+        .img {
+          background-image: url(https://i.ytimg.com/vi/VNcBuiM00TE/maxresdefault.jpg);
+          background-size: 180%;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 80px;
+          width: 80px;
+          border-radius: 10px;
+          border: 3px solid #fff;
+        }
+
+        .img:hover {
+          border: 2px solid red;
+          animation: shake 1ms infinite alternate;
+        }
+
+        @keyframes shake {
+          0% {
+            transform: rotate(10deg);
+          }
+          100% {
+            transform: rotate(-10deg);
+          }
+        }
+
+      `}</style>
       <div style={background} className="background"></div>
       <div style={profileGroup}>
         <div style={profileSubGroup}>

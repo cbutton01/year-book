@@ -25,7 +25,7 @@ function Friend(props){
   };
 
   const button = {
-    backgroundColor: '#2d96de',
+    // backgroundColor: '#2d96de',
     color: 'white',
     borderRadius: '0',
     padding: '5px 15px'
@@ -33,10 +33,18 @@ function Friend(props){
 
   return (
     <div style={friend}>
+      <style jsx>{`
+        .color-toggle {
+          background-color: #2d96de;
+        }
+        .color-toggle:hover {
+          background-color: red;
+        }
+      `}</style>
       <div style={friendImg} className="img"></div>
       <div>
         <h3 style={h3}>{props.name}</h3>
-        <button style={button}>Message</button>
+        <button className="color-toggle" style={button}>Message</button>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 function Friend(props){
   const friend = {
@@ -40,5 +41,9 @@ function Friend(props){
   </div>
   );
 }
+
+Friend.propTypes = {
+  name: PropTypes.string
+};
 
 export default Friend;

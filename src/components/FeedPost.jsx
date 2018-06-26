@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 function FeedPost(props){
   const friend = {
@@ -37,5 +38,10 @@ function FeedPost(props){
     </div>
   );
 }
+
+FeedPost.propTypes = {
+  title: PropTypes.string,
+  msg: PropTypes.string
+};
 
 export default FeedPost;

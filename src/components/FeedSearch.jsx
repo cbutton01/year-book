@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 function FeedSearch(){
   const feedSearch = {
@@ -14,8 +16,10 @@ function FeedSearch(){
     color: 'white',
     borderRadius: '5px',
     padding: '5px 15px',
-    marginRight: '20px',
-    border: 'none'
+    marginLeft: '20px',
+    border: 'none',
+    textDecoration: 'none',
+    fontSize: '14px'
   };
 
   const input = {
@@ -27,8 +31,8 @@ function FeedSearch(){
 
   return (
     <div style={feedSearch}>
-      <button style={button}>Go</button>
       <input style={input} placeholder="What's happening?"></input>
+      <Link to="/newfeedpost" style={button}>Post!</Link>
     </div>
   );
 }

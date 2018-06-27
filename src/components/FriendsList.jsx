@@ -3,16 +3,16 @@ import Friend from './Friend';
 
 let masterFriendsList = [
   {
-    name: 'Mike'
+    name: 'Mike',
   },
   {
-    name: 'Matt'
+    name: 'Matt',
   },
   {
-    name: 'Mark'
+    name: 'Mark',
   },
   {
-    name: 'Mitch'
+    name: 'Mitch',
   }
 ];
 
@@ -32,7 +32,9 @@ function FriendsList(){
     <div style={friendsList}>
       <h2 style={h2}>Friends List</h2>
       {masterFriendsList.map((friend, index) =>
-        <Friend name={friend.name}
+        <Friend
+          name={friend.name}
+          img={friend.img}
           key={index} />
       )}
     </div>

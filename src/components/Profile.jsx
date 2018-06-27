@@ -74,6 +74,11 @@ function Profile(){
           0% {
             transform: rotate(10deg);
           }
+
+          50%{
+            transform: scale(5);
+          }
+
           100% {
             transform: rotate(-10deg);
           }

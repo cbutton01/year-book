@@ -41,7 +41,7 @@ function Friend(props){
           background-color: red;
         }
       `}</style>
-      <div style={friendImg} className="img"></div>
+    <div style={friendImg} className="img">{props.img}</div>
       <div>
         <h3 style={h3}>{props.name}</h3>
         <button className="color-toggle" style={button}>Message</button>
@@ -51,7 +51,8 @@ function Friend(props){
 }
 
 Friend.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.string,
+  img: PropTypes.url
 };
 
 export default Friend;

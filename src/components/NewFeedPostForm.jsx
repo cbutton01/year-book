@@ -12,8 +12,6 @@ function NewFeedPostForm(){
   };
 
   const form = {
-    // display: 'flex',
-    // justifyContent: 'space-between',
     height: '90%',
     width: '90%',
     borderRadius: '5px',
@@ -32,6 +30,7 @@ function NewFeedPostForm(){
   };
 
   const nevermind = {
+    fontFamily: 'sans-serif',
     backgroundColor: '#712dde',
     color: 'white',
     borderRadius: '5px',

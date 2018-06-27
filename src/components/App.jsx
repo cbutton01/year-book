@@ -8,14 +8,13 @@ import FriendsList from './FriendsList';
 import NewFeedPostForm from './NewFeedPostForm';
 
 function App(){
+
   const main = {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr',
     gridGap: '10px',
     padding: '10px',
   };
-
-
 
   return (
     <div>

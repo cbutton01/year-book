@@ -2,6 +2,8 @@ import React from 'react';
 import Error404 from './Error404';
 import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
+import ProfileList from './ProfileList';
+
 
 function App(){
 
@@ -19,6 +21,7 @@ function App(){
         <div>
         </div>
         <Switch>
+          <Route exact path='/' component={ProfileList} />
           <Route component={Error404} />
         </Switch>
       </div>

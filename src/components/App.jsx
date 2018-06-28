@@ -2,7 +2,6 @@ import React from 'react';
 import Error404 from './Error404';
 import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
-import NewFeedPostForm from './NewFeedPostForm';
 
 function App(){
 
@@ -15,16 +14,13 @@ function App(){
 
   return (
     <div>
-      <Navbar/>
+      <Header/>
       <div style={main}>
         <div>
-          <Profile/>
-          <Bio/>
         </div>
         <Switch>
           <Route component={Error404} />
         </Switch>
-        <FriendsList/>
       </div>
     </div>
   );

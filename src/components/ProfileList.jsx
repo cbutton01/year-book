@@ -9,6 +9,14 @@ const PROFILE_LIST = [
   {
     image: 'http://pixelartmaker.com/art/bd8c19ecda5bc7f.png',
     name: 'Samson'
+  },
+  {
+    image: 'https://opwnworld.files.wordpress.com/2014/11/azazel.png',
+    name: 'Azazel'
+  },
+  {
+    image: 'https://d1u5p3l4wpay3k.cloudfront.net/bindingofisaacre_gamepedia/0/0c/Boss_Krampus.png?version=b754992be9f6e131a477db80648a21b1',
+    name: 'Krampus'
   }
 ];
 
@@ -16,17 +24,12 @@ const GRID = {
   textAlign: 'center',
   display: 'grid',
   padding: '10px',
-  gridTemplateRows: '1fr'
-};
-
-const BORDER = {
-  border: '2px solid red'
+  gridTemplateColumns: 'repeat(3, 1fr)'
 };
 
 function ProfileList(){
   return(
     <div style={GRID}>
-      <div>
         {PROFILE_LIST.map((profile, index) =>
           <Profile
             image={profile.image}
@@ -34,7 +37,6 @@ function ProfileList(){
             key={index}
             />
         )}
-      </div>
     </div>
   );
 }

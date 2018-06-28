@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+const BORDER = {
+  border: '2px solid #333'
+}
+
 function Profile(props){
   return(
-    <div>
+    <div style={BORDER}>
       <img src={props.image}></img>
       <h3>
         {props.name}

@@ -7,9 +7,8 @@ import ProfileList from './ProfileList';
 
 function App(){
 
-  const main = {
+  const MAIN = {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr',
     gridGap: '10px',
     padding: '10px',
   };
@@ -17,7 +16,7 @@ function App(){
   return (
     <div>
       <Header/>
-      <div style={main}>
+      <div style={MAIN}>
         <div>
         </div>
         <Switch>

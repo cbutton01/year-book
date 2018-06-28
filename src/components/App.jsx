@@ -1,10 +1,7 @@
 import React from 'react';
+import Error404 from './Error404';
+import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
-import Navbar from './Navbar';
-import Profile from './Profile';
-import Bio from './Bio';
-import SocialFeed from './SocialFeed';
-import FriendsList from './FriendsList';
 import NewFeedPostForm from './NewFeedPostForm';
 
 function App(){
@@ -25,8 +22,7 @@ function App(){
           <Bio/>
         </div>
         <Switch>
-          <Route exact path='/' component={SocialFeed} />
-          <Route path='/newfeedpost' component={NewFeedPostForm} />
+          <Route component={Error404} />
         </Switch>
         <FriendsList/>
       </div>

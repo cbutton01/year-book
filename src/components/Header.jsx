@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Navbar(){
+function Header(){
   const navbar = {
     display: 'flex',
     alignItems: 'center',
